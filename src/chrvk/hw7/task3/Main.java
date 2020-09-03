@@ -1,13 +1,13 @@
-//Есть List объектов у каждого из которых 2 поля: int и String.
-// Удалить те у которых значения int повторяются(оставить по одному из дубликатов).
-package Task3;
+/*Есть List объектов у каждого из которых 2 поля: int и String.
+Удалить те у которых значения int повторяются(оставить по одному из дубликатов).*/
+package chrvk.hw7.task3;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
         people.add(new Person("Alex", 23));

@@ -2,13 +2,13 @@
     Написать метод который преобразовывает ее в формат "22 Jan, 7:15 PM".
     Предусмотреть обработку ситуации если входящая дата в недопустимом формате.
 */
-package Task4;
+package chrvk.hw7.task4;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class main {
+public class Main {
     public static String getDate(String dateString) {
         String format = "dd.MM.yyyy HH:mm:ss";
         String newFormat = "dd MMM, h:mm a";
@@ -18,7 +18,7 @@ public class main {
             formatter = DateTimeFormatter.ofPattern(newFormat, Locale.US);
             dateString = localDate.format(formatter);
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         return dateString;

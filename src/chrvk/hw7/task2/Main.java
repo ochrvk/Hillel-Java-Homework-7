@@ -1,30 +1,37 @@
-package Task2;
+package chrvk.hw7.task2;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class main {
+//Задан текстовый файл. Вывести сколько в нём: a) строк b) слов c) символов
+
+public class Main {
 
     public static void inputFile(File file) {
-        try (FileWriter writer = new FileWriter(file, false)) {
+        FileWriter writer;
+        try {
+            writer = new FileWriter(file, false);
             writer.write("Привет, я строка!\nПривет,"
                     + " я вторая строка\nПривет, я третья строка");
+
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
     public static String searchInFile(File file) {
         int wordNum = 0;
         int lineNum = 0;
-        String symbolNum = "";
+        StringBuilder symbolNum = new StringBuilder();
 
-        try (FileReader fileReader = new FileReader(file)) {
+        FileReader fileReader;
+        try {
+            fileReader = new FileReader(file);
             LineNumberReader lineNumberReader = new LineNumberReader(fileReader);
 
             Scanner in = new Scanner(file);
             while (in.hasNext()) {
-                symbolNum += in.nextLine() + "\r\n";
+                symbolNum.append(in.nextLine()).append("\r\n");
             }
 
             while (lineNumberReader.readLine() != null) {
@@ -38,7 +45,7 @@ public class main {
             }
             lineNumberReader.close();
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         return "Кол-во строк: " + lineNum + "\nКол-во слов: "
@@ -46,7 +53,7 @@ public class main {
     }
 
     public static void main(String[] args) {
-        File file = new File("src/Task2/text.txt");
+        File file = new File("src/chrvk.hw7.Task2/text.txt");
         inputFile(file);
         System.out.println(searchInFile(file));
     }

@@ -4,9 +4,9 @@
     справа от него следующее по значению, итд,
     в правом нижнем углу самое большое. */
 
-package Task1;
+package chrvk.hw7.task1;
 
-public class main {
+public class Main {
     public static void outputArray(int[][] array, int N, int M) {
         System.out.println("Массив: ");
         for (int i = 0; i < M; i++) {
@@ -17,13 +17,12 @@ public class main {
         }
     }
 
-    public static int[][] fillArray(int[][] array, int N, int M) {
+    public static void fillArray(int[][] array, int N, int M) {
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 array[i][j] = (int) (Math.random() * 90);
             }
         }
-        return array;
     }
 
     public static void sortArray(int[][] array) {

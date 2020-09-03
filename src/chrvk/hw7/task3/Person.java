@@ -1,12 +1,12 @@
-package Task3;
+package chrvk.hw7.task3;
 
 import java.util.Objects;
 
-public class Person  {
-    private String name;
-    private int hoursCount;
+public class Person {
+    private final String name;
+    private final int hoursCount;
 
-    public Person(String name, int hoursCount){
+    public Person(String name, int hoursCount) {
         this.name = name;
         this.hoursCount = hoursCount;
     }
