@@ -2,7 +2,7 @@
     Написать метод который преобразовывает ее в формат "22 Jan, 7:15 PM".
     Предусмотреть обработку ситуации если входящая дата в недопустимом формате.
 */
-package chrvk.hw7.task4;
+package chrvk.javaelementary.hw7.task4;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,4 +1,4 @@
-package chrvk.hw7.task3;
+package chrvk.javaelementary.hw7.task3;
 
 import java.util.Objects;
 

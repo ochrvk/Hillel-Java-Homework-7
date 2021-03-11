@@ -4,7 +4,7 @@
     справа от него следующее по значению, итд,
     в правом нижнем углу самое большое. */
 
-package chrvk.hw7.task1;
+package chrvk.javaelementary.hw7.task1;
 
 public class Main {
     public static void outputArray(int[][] array, int N, int M) {

@@ -1,4 +1,4 @@
-package chrvk.hw7.task2;
+package chrvk.javaelementary.hw7.task2;
 
 import java.io.*;
 import java.util.Scanner;
