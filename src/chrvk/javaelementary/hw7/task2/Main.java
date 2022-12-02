@@ -3,8 +3,6 @@ package chrvk.javaelementary.hw7.task2;
 import java.io.*;
 import java.util.Scanner;
 
-//Задан текстовый файл. Вывести сколько в нём: a) строк b) слов c) символов
-
 public class Main {
 
     public static void inputFile(File file) {

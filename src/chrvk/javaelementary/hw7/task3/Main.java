@@ -1,5 +1,3 @@
-/*Есть List объектов у каждого из которых 2 поля: int и String.
-Удалить те у которых значения int повторяются(оставить по одному из дубликатов).*/
 package chrvk.javaelementary.hw7.task3;
 
 import java.util.ArrayList;
